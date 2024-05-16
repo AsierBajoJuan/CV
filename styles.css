@@ -2,23 +2,53 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image: url('background.jpg'); /* Aquí se especifica la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 header {
-    background-color: #333;
+    /*background-color: rgba(51, 51, 51, 0.8); /* Fondo semitransparente para que el texto sea legible */
+    background-image: url('head.jpg');
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+a {
+    color: #009688;
+    text-decoration: none;
 }
 
 section {
     margin: 20px;
     padding: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente para que el texto sea legible */
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    color: #333;
+h1 {
+    color: #fffdfd;
+}
+
+h2 {
+    border-bottom: 2px solid #009688;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #333
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
 }
