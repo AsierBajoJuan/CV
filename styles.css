@@ -1,16 +1,22 @@
+/* ========== ESTILOS BASE ========== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('background.jpg'); /* Aquí se especifica la imagen de fondo */
-    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    /* background-image: url('background.jpg'); */
+    background-color: rgb(0, 62, 104);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: #009688;
+    text-decoration: none;
 }
 
 header {
-    /*background-color: rgba(51, 51, 51, 0.8); /* Fondo semitransparente para que el texto sea legible */
-    background-image: url('head.jpg');
+    background-image: url('assets/fondo.png');
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -20,35 +26,86 @@ header p {
     margin: 5px 0;
 }
 
-a {
-    color: #009688;
-    text-decoration: none;
-}
-
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente para que el texto sea legible */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 h1 {
     color: #fffdfd;
 }
 
-h2 {
+/* ========== SECCIONES GENERALES ========== */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+}
+
+section h2 {
+    font-size: 1.8em;
     border-bottom: 2px solid #009688;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     margin-bottom: 20px;
-    color: #333
+    color: #333;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+section ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-ul li {
-    margin-bottom: 15px;
+section ul li {
+    margin-bottom: 10px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
 }
+
+section ul li:hover {
+    background-color: #009688;
+    color: white;
+    transform: translateX(5px);
+    cursor: default;
+}
+
+/* ========== EFECTOS Y ANIMACIONES ========== */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== SECCIÓN DE HABILIDADES ========== */
+.habilidades {
+    max-width: 500px;
+    margin: auto;
+}
+
+.habilidades h4 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #009688;
+}
+
+.habilidades ul {
+    margin: 10px 0;
+}
+
+.habilidades li {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    color: #333;
+}
+section ul li a {
+    color: #004d40;
+    font-weight: bold;
+}
+
+section ul li:hover a {
+    color: #004d40;
+}
+
+

@@ -1,0 +1,12 @@
+[
+  { "bloque": "1º CURSO", "porcentaje": 90, "ects": 54, "max": 60 },
+  { "bloque": "2º CURSO", "porcentaje": 60, "ects": 36, "max": 60 },
+  { "bloque": "3º CURSO", "porcentaje": 0, "ects": 0, "max": 60 },
+  { "bloque": "Men. Soft", "porcentaje": 13, "ects": 6, "max": 48 },
+  { "bloque": "Men. Com", "porcentaje": 0, "ects": 0, "max": 48 },
+  { "bloque": "Prácticas", "porcentaje": 100, "ects": 12, "max": 12 },
+  { "bloque": "Seminarios", "porcentaje": 29, "ects": 7, "max": 24 },
+  { "bloque": "Opcionales", "porcentaje": 0, "ects": 0, "max": 24 },
+  { "bloque": "TFG", "porcentaje": 0, "ects": 0, "max": 12 },
+  { "bloque": "Total", "porcentaje": 48, "ects": 115, "max": 240 }
+]

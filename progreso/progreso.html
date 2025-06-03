@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Progreso de Ingeniería Informática</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="progresocss.css">
+</head>
+<body>
+    <section>
+        <h2>Progreso de Ingeniería Informática</h2>
+        <p style="text-align:right;">Actualizado: 05/06/2025</p>
+        <table class="tabla-progreso">
+            <thead>
+                <tr>
+                    <th>Bloque</th>
+                    <th>Progreso</th>
+                    <th>ECTS</th>
+                    <th>Máx</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <a class="volver" href="../index.html">← Volver al CV</a>
+    </section>
+
+    <script>
+        fetch('progreso.json')
+            .then(res => res.json())
+            .then(data => {
+                const tabla = document.querySelector(".tabla-progreso tbody");
+                data.forEach(fila => {
+                    const tr = document.createElement("tr");
+                    tr.innerHTML = `
+                        <td>${fila.bloque}</td>
+                        <td><div class="barra-progreso" style="width: ${fila.porcentaje}%; background-color: ${colorPorcentaje(fila.porcentaje)};">${fila.porcentaje}%</div></td>
+                        <td>${fila.ects}</td>
+                        <td>${fila.max}</td>
+                    `;
+                    tabla.appendChild(tr);
+                });
+            });
+
+        function colorPorcentaje(p) {
+            if (p === 0) return "#f44336";
+            if (p < 50) return "#ff9800";
+            if (p < 100) return "#4caf50";
+            return "#009688";
+        }
+    </script>
+</body>
+</html>
