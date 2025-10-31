@@ -8,6 +8,7 @@
   { "bloque": "Seminarios", "porcentaje": 29, "ects": 7, "max": 24 },
   { "bloque": "Opcionales", "porcentaje": 0, "ects": 0, "max": 24 },
   { "bloque": "TFG", "porcentaje": 0, "ects": 0, "max": 12 },
-  { "bloque": "Total", "porcentaje": 48, "ects": 115, "max": 240 }
+  { "bloque": "Total", "porcentaje": 52.9, "ects": 127, "max": 240 }
 ]
+
 
